@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHIN SEONG MIN | Portfolio</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header id="main-header" class="fixed top-0 left-0 w-full z-[1000] transition-all duration-500 py-6">
+    <div class="container-gnb mx-auto max-w-5xl px-4">
+      <nav
+        class="gnb-nav bg-white/70 backdrop-blur-md border border-white/40 rounded-2xl px-6 py-3 flex items-center justify-between transition-all duration-500">
+        <div class="logo font-black tracking-tighter text-xl text-[#2D7FF9] cursor-pointer">SEONGMIN</div>
+        <ul class="hidden md:flex items-center gap-8">
+          <li>
+            <a href="#about"
+              class="group relative text-[15px] font-semibold text-slate-600 hover:text-[#2D7FF9] transition-colors">
+              About <span
+                class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-[#2D7FF9] transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio"
+              class="group relative text-[15px] font-semibold text-slate-600 hover:text-[#2D7FF9] transition-colors">
+              Portfolio <span
+                class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-[#2D7FF9] transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#skills"
+              class="group relative text-[15px] font-semibold text-slate-600 hover:text-[#2D7FF9] transition-colors">
+              Skills <span
+                class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-[#2D7FF9] transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:w-full"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#footer"
+              class="group relative text-[15px] font-semibold text-slate-600 hover:text-[#2D7FF9] transition-colors">
+              Contact <span
+                class="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-[#2D7FF9] transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:w-full"></span>
+            </a>
+          </li>
+        </ul>
+        <div class="md:hidden flex items-center">
+          <!-- Mobile Menu Icon (Simple) -->
+          <button class="text-slate-900" aria-label="메뉴 열기">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>
+          <div class="headline-line">
+            <span class="ani1">태도는</span>
+            <span class="max">MAXIMUM</span>
+          </div>
+        </h1>
+        <p class="hero-desc"> 불필요함을 덜어내고 사용자 경험의 핵심을 남기는, <br>주니어 디자이너이자 개발자 <strong
+            class="text-slate-900 border-b-[3px] border-[#2D7FF9] pb-[2px]">신성민</strong>의 포트폴리오입니다. </p>
+        <div class="hero-btns">
+          <button class="btn btn-primary"> 이력서 보기 </button>
+          <button class="btn btn-secondary">Github</button>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-mask-container">
+          <img src="./img/Portfolio.png" alt="신성민 프로필" class="hero-img" fetchpriority="high" />
+        </div>
+        <!-- Floating Elements -->
+        <div class="floating-capsule float-max">MAXIMUM</div>
+        <div class="floating-capsule float-min">MINIMAL</div>
+
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <div class="scroll-wrap">
+        <span>Scroll</span>
+        <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="7 13 12 18 17 13"></polyline>
+          <polyline points="7 6 12 11 17 6"></polyline>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <h2 class="pf-section-title reveal-toss">
+        <span class="pf-main-text"> 기본에 <span class="dimmed">충실하며</span>
+          <span class="highlight-chip">About Me</span> 끊임없이 <span class="dimmed">고민합니다.</span>
+        </span>
+      </h2>
+      <div class="about-grid reveal">
+        <div class="about-card">
+          <span class="label">Name</span>
+          <span class="value">신성민</span>
+        </div>
+        <div class="about-card">
+          <span class="label">Location</span>
+          <span class="value">Seoul</span>
+        </div>
+        <div class="about-card">
+          <span class="label">Role</span>
+          <span class="value">UX/UI Designer</span>
+        </div>
+      </div>
+      <div class="career-section reveal">
+        <!-- Education -->
+        <div class="timeline-column">
+          <h3 class="timeline-title">Education</h3>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <span class="timeline-date">2025.10 - 2026.04 (6개월)</span>
+              <div class="timeline-content">
+                <p class="timeline-name">MBC academy</p>
+                <p class="timeline-desc">UI/UX 디자인 및 웹 퍼블리싱 전문가 과정 수료</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2019.03 - 2025.09 (중퇴)</span>
+              <div class="timeline-content">
+                <p class="timeline-name">수원대학교</p>
+                <p class="timeline-desc">일어일문학 전공</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Experience -->
+        <div class="timeline-column">
+          <h3 class="timeline-title">Experience</h3>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <span class="timeline-date">2025.05 - 2025.08 (3개월)</span>
+              <div class="timeline-content">
+                <p class="timeline-name">김&장 법률사무소</p>
+                <p class="timeline-desc">업무지원부 계약직 근무</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-date">2022.12 - 2023.05 (6개월)</span>
+              <div class="timeline-content">
+                <p class="timeline-name">김&장 법률사무소</p>
+                <p class="timeline-desc">업무지원부 계약직 근무</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Certificates -->
+        <div class="timeline-column">
+          <h3 class="timeline-title">Certificates</h3>
+          <div class="timeline-list">
+            <div class="timeline-item">
+              <span class="timeline-date">2025.12</span>
+              <div class="timeline-content">
+                <p class="timeline-name">GTQ 1급</p>
+                <p class="timeline-desc">한국생산성본부(KPC)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="portfolio">
+    <div class="pf-container" style="padding: 100px 20px;">
+      <h2 class="pf-section-title reveal-toss">
+        <span class="pf-main-text"> 호기심이라는 <span class="dimmed">연료로</span>
+          <span class="highlight-chip">Portfolio</span> 매일 새로움을 <span class="dimmed">실험합니다.</span>
+        </span>
+      </h2>
+    </div>
+    <div class="portfolio-list">
+      <!-- Project 01 -->
+      <div class="pf-card">
+        <div class="pf-left">
+          <div class="pf-title-wrap">
+            <h3 class="pf-title">웹사이트 구현</h3>
+            <span class="pf-subtitle">(GROVE)</span>
+          </div>
+          <div class="pf-specs">
+            <div class="pf-spec-row">
+              <span class="pf-label">배포매체</span><span class="pf-val">Web (PC/Mobile)</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">작업기간</span><span class="pf-val">2주</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">기여도</span><span class="pf-val">100% (개인)</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">브라우저</span><span class="pf-val">Chrome, Safari, Edge</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">주요기술</span><span class="pf-val">HTML, CSS, JS, GSAP</span>
+            </div>
+          </div>
+          <div class="pf-links">
+            <button class="pf-link-btn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+              </svg> Github </button>
+            <button class="pf-link-btn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+              </svg> 기획서 </button>
+            <button class="pf-link-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg> 사이트 </button>
+          </div>
+        </div>
+        <div class="pf-right">
+          <img src="./img/pf.png" alt="GROVE 프로젝트 이미지" />
+        </div>
+      </div>
+      <!-- Project 02 -->
+      <div class="pf-card">
+        <div class="pf-left">
+          <div class="pf-title-wrap">
+            <h3 class="pf-title">UX/UI 어플 리디자인</h3>
+            <span class="pf-subtitle">(Brewda Coffee)</span>
+          </div>
+          <div class="pf-specs">
+            <div class="pf-spec-row">
+              <span class="pf-label">배포매체</span><span class="pf-val">App (iOS/Android)</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">작업기간</span><span class="pf-val">3주</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">기여도</span><span class="pf-val">100% (개인)</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">사용도구</span><span class="pf-val">Figma, Photoshop</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">핵심기능</span><span class="pf-val">주문 최적화 UX 개선</span>
+            </div>
+          </div>
+          <div class="pf-links">
+            <button class="pf-link-btn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+              </svg> Github </button>
+            <button class="pf-link-btn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+              </svg> 기획서 </button>
+            <button class="pf-link-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg> 프로토 타입 </button>
+          </div>
+        </div>
+        <div class="pf-right">
+          <img src="./img/P2.png" alt="Brewda Coffee 앱 리디자인 이미지" />
+        </div>
+      </div>
+      <!-- Project 03 -->
+      <div class="pf-card">
+        <div class="pf-left">
+          <div class="pf-title-wrap">
+            <h3 class="pf-title">AI 광고 영상 제작</h3>
+            <span class="pf-subtitle">(LG U+)</span>
+          </div>
+          <div class="pf-specs">
+            <div class="pf-spec-row">
+              <span class="pf-label">배포매체</span><span class="pf-val">SNS (Youtube/Insta)</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">작업기간</span><span class="pf-val">1주</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">기여도</span><span class="pf-val">100% (개인)</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">사용기술</span><span class="pf-val">Kling, Premiere, AE</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">영상길이</span><span class="pf-val">30초</span>
+            </div>
+          </div>
+          <div class="pf-links">
+            <button class="pf-link-btn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+              </svg> Github </button>
+            <button class="pf-link-btn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+              </svg> 기획서 </button>
+            <button class="pf-link-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8 5v14l11-7z" />
+              </svg> 영상 보기 </button>
+          </div>
+        </div>
+        <div class="pf-right">
+          <img src="./img/P3.png" alt="LG U+ 광고 영상 썸네일" />
+        </div>
+      </div>
+      <!-- Project 04 -->
+      <div class="pf-card">
+        <div class="pf-left">
+          <div class="pf-title-wrap">
+            <h3 class="pf-title">OTT 사이트 제작</h3>
+            <span class="pf-subtitle">(VODA)</span>
+          </div>
+          <div class="pf-specs">
+            <div class="pf-spec-row">
+              <span class="pf-label">배포매체</span><span class="pf-val">Web (Responsive)</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">작업기간</span><span class="pf-val">4주</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">기여도</span><span class="pf-val">100% (개인)</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">주요기술</span><span class="pf-val">React, Tailwind CSS</span>
+            </div>
+            <div class="pf-spec-row">
+              <span class="pf-label">브라우저</span><span class="pf-val">Chrome, Safari</span>
+            </div>
+          </div>
+          <div class="pf-links">
+            <button class="pf-link-btn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+              </svg> Github </button>
+            <button class="pf-link-btn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+              </svg> 기획서 </button>
+            <button class="pf-link-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg> 사이트 </button>
+          </div>
+        </div>
+        <div class="pf-right">
+          <img src="./img/P4.png" alt="VODA 프로젝트 이미지" class="voda-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="container">
+      <h2 class="pf-section-title reveal-toss">
+        <span class="pf-main-text"> 완성도 높은 <span class="dimmed">결과물을 위한</span>
+          <span class="highlight-chip">Skills</span> 보유 기술 <span class="dimmed">스택입니다.</span>
+        </span>
+      </h2>
+      <div class="skills-layout reveal">
+        <!-- Group 1: Design -->
+        <div class="skill-category">
+          <div class="category-left">
+            <h3 class="category-title">Design</h3>
+          </div>
+          <div class="category-right">
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #31a8ff"></span>
+                  <h4 class="name">Adobe Photoshop</h4>
+                </div>
+                <span class="percent">90%</span>
+              </div>
+              <p class="desc">고퀄리티 이미지 편집 및 브랜딩 자산 제작이 가능합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="90%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #ff7c00"></span>
+                  <h4 class="name">Adobe Illustrator</h4>
+                </div>
+                <span class="percent">85%</span>
+              </div>
+              <p class="desc">로고, 아이콘 등 벡터 기반의 그래픽 디자인에 능숙합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="85%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #f24e1e"></span>
+                  <h4 class="name">Figma</h4>
+                </div>
+                <span class="percent">95%</span>
+              </div>
+              <p class="desc">컴포넌트 중심의 UI 설계 및 프로토타이핑을 지원합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="95%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Group 2: Development -->
+        <div class="skill-category">
+          <div class="category-left">
+            <h3 class="category-title">Development</h3>
+          </div>
+          <div class="category-right">
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #e34f26"></span>
+                  <h4 class="name">HTML / CSS</h4>
+                </div>
+                <span class="percent">95%</span>
+              </div>
+              <p class="desc">웹 표준을 준수하며 모든 기기에 최적화된 화면을 구현합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="95%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #f7df1e"></span>
+                  <h4 class="name">JavaScript</h4>
+                </div>
+                <span class="percent">85%</span>
+              </div>
+              <p class="desc">인터랙티브한 동적 요소와 API 연동 로직을 설계합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="85%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #61dafb"></span>
+                  <h4 class="name">React</h4>
+                </div>
+                <span class="percent">80%</span>
+              </div>
+              <p class="desc">컴포넌트 기반의 효율적인 UI 아키텍처를 구축합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="80%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #3776AB"></span>
+                  <h4 class="name">Python</h4>
+                </div>
+                <span class="percent">80%</span>
+              </div>
+              <p class="desc">다양한 데이터 처리 스크립트 작성 및 백엔드 기초 구현이 가능합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Group 3: Video -->
+        <div class="skill-category">
+          <div class="category-left">
+            <h3 class="category-title">Video</h3>
+          </div>
+          <div class="category-right">
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #9999ff"></span>
+                  <h4 class="name">Adobe Premiere Pro</h4>
+                </div>
+                <span class="percent">90%</span>
+              </div>
+              <p class="desc">컷 편집 및 색 보정, 효과적인 스토리텔링이 가능합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="90%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #9999ff"></span>
+                  <h4 class="name">Adobe After Effects</h4>
+                </div>
+                <span class="percent">85%</span>
+              </div>
+              <p class="desc">화려한 모션 그래픽과 시각 효과를 제작합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Group 4: AI Tech -->
+        <div class="skill-category">
+          <div class="category-left">
+            <h3 class="category-title">AI Tech</h3>
+          </div>
+          <div class="category-right">
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #20c997"></span>
+                  <h4 class="name">Kling</h4>
+                </div>
+                <span class="percent">95%</span>
+              </div>
+              <p class="desc">고퀄리티 AI 비디오 생성 및 편집에 능숙합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="95%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #f7df1e"></span>
+                  <h4 class="name">Stitch</h4>
+                </div>
+                <span class="percent">90%</span>
+              </div>
+              <p class="desc">AI 기반의 창의적인 콘텐츠 결합 및 최적화를 지원합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Group 5: Productivity -->
+        <div class="skill-category">
+          <div class="category-left">
+            <h3 class="category-title">Productivity</h3>
+          </div>
+          <div class="category-right">
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #191f28"></span>
+                  <h4 class="name">GitHub</h4>
+                </div>
+                <span class="percent">90%</span>
+              </div>
+              <p class="desc">Git Flow를 활용한 버전 관리 및 원활한 협업이 가능합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="90%"></div>
+              </div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-top">
+                <div class="skill-brand">
+                  <span class="dot" style="background-color: #000000"></span>
+                  <h4 class="name">Notion</h4>
+                </div>
+                <span class="percent">90%</span>
+              </div>
+              <p class="desc">프로젝트 일정 관리 및 체계적인 문서화를 선호합니다.</p>
+              <div class="progress-line">
+                <div class="progress-fill" data-percent="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="elegant-footer">
+    <div class="container">
+      <div class="footer-top reveal-toss">
+        <h2 class="footer-heading">Let's work<br />together</h2>
+        <p class="footer-sub">새로운 가치를 만들어갈 준비된 동료를 찾으신다면,<br class="hidden md:block" />언제든 편하게 연락주세요.</p>
+      </div>
+      <div class="footer-links reveal-toss" style="transition-delay: 0.1s;">
+        <a href="mailto:friagain2000@gmail.com" class="footer-link">
+          <span class="link-label">Email</span>
+          <span class="link-text">friagain2000@gmail.com</span>
+        </a>
+        <div class="link-divider"></div>
+        <a href="tel:01082589986" class="footer-link">
+          <span class="link-label">Phone</span>
+          <span class="link-text">010-8258-9986</span>
+        </a>
+        <div class="link-divider"></div>
+        <a href="https://github.com/friagain2000" target="_blank" class="footer-link">
+          <span class="link-label">Github</span>
+          <span class="link-text">@friagain2000</span>
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 SHIN SEONG MIN. All rights reserved.</p>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="back-to-top group"> Back to top <svg
+            class="group-hover:-translate-y-1 transition-transform duration-300" width="16" height="16"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

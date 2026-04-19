@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --check F:/Mac_share/Portfolio-main/js/script.js)",
+      "Bash(npx --version)",
+      "Bash(npx --yes htmlhint index.html Figma.html)",
+      "Bash(npx --yes stylelint@latest --config '{\"rules\":{\"block-no-empty\":true,\"color-no-invalid-hex\":true,\"no-duplicate-selectors\":true,\"declaration-block-no-duplicate-properties\":[true,{\"ignore\":[\"consecutive-duplicates-with-different-values\"]}],\"no-descending-specificity\":null}}' \"css/**/*.css\")",
+      "Bash(npx --yes stylelint \"css/**/*.css\")",
+      "Bash(node --check js/script.js)",
+      "Bash(npx --yes htmlhint index.html)",
+      "Bash(npx --yes stylelint --config '{\"extends\":\"stylelint-config-standard\"}' \"css/**/*.css\")",
+      "Bash(npx --yes tailwindcss@3 -c tailwind.config.js -i css/tailwind-input.css -o css/tailwind.css --minify)",
+      "Bash(npx --yes stylelint \"css/style.css\")",
+      "mcp__claude_ai_Figma__get_design_context"
+    ]
+  }
+}
